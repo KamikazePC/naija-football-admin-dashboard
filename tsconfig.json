@@ -1,1 +1,14 @@
-{}
+{
+    "extends": "@tsconfig/node22/tsconfig.json",
+    "compilerOptions": {
+      "moduleResolution": "node16",
+      "baseUrl": ".",
+      "paths": {
+      "@naija-football-admin-dashboard/core/*": ["packages/core/src/*"]
+      },
+      "skipLibCheck": true
+    },
+    "include": ["packages/**/*"],
+    "exclude": ["node_modules"]
+  }
+  

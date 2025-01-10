@@ -1,12 +1,16 @@
 {
-  "name": "@monorepo-template/functions",
+  "name": "@naija-football-admin-dashboard/functions",
   "version": "0.0.0",
   "type": "module",
   "dependencies": {
-    "@monorepo-template/core": "*",
-    "sst": "*"
+    "@aws-sdk/client-dynamodb": "^3.724.0",
+    "@aws-sdk/lib-dynamodb": "^3.724.0",
+    "@naija-football-admin-dashboard/core": "^0.0.0",
+    "sst": "*",
+    "uuid": "^11.0.4"
   },
   "devDependencies": {
-    "@types/aws-lambda": "^8"
+    "@types/aws-lambda": "^8.10.147",
+    "@types/uuid": "^10.0.0"
   }
 }

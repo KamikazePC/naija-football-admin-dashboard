@@ -3,7 +3,7 @@
 export default $config({
   app(input) {
     return {
-      name: "monorepo-template",
+      name: "naija-football-admin-dashboard",
       removal: input?.stage === "production" ? "retain" : "remove",
       protect: ["production"].includes(input?.stage),
       home: "aws",
@@ -14,7 +14,8 @@ export default $config({
     await import("./infra/api");
 
     return {
-      MyBucket: storage.bucket.name,
+      // MyBucket: storage.bucket.name,
+
     };
   },
 });
